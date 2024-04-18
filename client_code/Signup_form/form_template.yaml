@@ -1,0 +1,38 @@
+container: {type: ColumnPanel}
+components:
+- name: label_1
+  properties: {text: SIGNUP PAGE, bold: true, underline: true, align: center}
+  type: Label
+  layout_properties: {grid_position: 'HOGBOZ,XVLRPW'}
+- name: label_2
+  properties: {text: enter the email}
+  type: Label
+  layout_properties: {grid_position: 'TLKVSS,LNENAC'}
+- name: email
+  properties: {text: ''}
+  type: TextBox
+  layout_properties: {grid_position: 'YAOENC,LFFZUV'}
+  event_bindings: {pressed_enter: email_pressed_enter}
+- name: label_3
+  properties: {text: password}
+  type: Label
+  layout_properties: {grid_position: 'HYRHAW,OBVJII'}
+- name: password
+  properties: {text: ''}
+  type: TextBox
+  layout_properties: {grid_position: 'BNEXNR,PMRNER'}
+  event_bindings: {pressed_enter: password_pressed_enter}
+- name: label_4
+  properties: {text: confirm password}
+  type: Label
+  layout_properties: {grid_position: 'OMJDUX,LSUKYN'}
+- name: c_password
+  properties: {text: ''}
+  type: TextBox
+  layout_properties: {grid_position: 'THUWAV,AZMHDF'}
+- name: button_1
+  properties: {text: SIGN UP}
+  type: Button
+  layout_properties: {grid_position: 'BZBWSC,FJYGGN'}
+  event_bindings: {click: button_1_click}
+is_package: true

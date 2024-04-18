@@ -1,0 +1,30 @@
+container: {type: ColumnPanel}
+components:
+- name: label_1
+  properties: {text: LOGIN PAGE, bold: true, align: center}
+  type: Label
+  layout_properties: {grid_position: 'ARNLOO,XDGAJA'}
+- name: label_2
+  properties: {text: enter the email}
+  type: Label
+  layout_properties: {grid_position: 'CNQJLH,PKQWVX'}
+- name: l_email
+  properties: {text: ''}
+  type: TextBox
+  layout_properties: {grid_position: 'CAOEDX,QYCPUD'}
+  event_bindings: {pressed_enter: l_email_pressed_enter}
+- name: label_3
+  properties: {text: enter the password}
+  type: Label
+  layout_properties: {grid_position: 'SPDFLF,DLNYUY'}
+- name: l_password
+  properties: {text: ''}
+  type: TextBox
+  layout_properties: {grid_position: 'SXWWOK,ATCLDU'}
+  event_bindings: {pressed_enter: l_password_pressed_enter}
+- name: button_1
+  properties: {text: LOGIN}
+  type: Button
+  layout_properties: {grid_position: 'QCTLFO,QRFXRM'}
+  event_bindings: {click: button_1_click}
+is_package: true
