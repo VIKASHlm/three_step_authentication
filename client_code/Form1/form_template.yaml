@@ -1,5 +1,18 @@
 is_package: true
 container:
   type: HtmlTemplate
-  properties: {html: '@theme:standard-page.html'}
-components: []
+  properties: {html: '@theme:standard-page.html', visible: true}
+components:
+- name: label_1
+  properties: {}
+  type: Label
+  layout_properties: {slot: logo}
+- name: email
+  properties: {}
+  type: Label
+  layout_properties: {slot: default}
+- type: TextBox
+  properties: {}
+  name: text_box_1
+  layout_properties: {slot: default}
+  event_bindings: {pressed_enter: text_box_1_pressed_enter}
